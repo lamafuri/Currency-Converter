@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 id="mainHeading">Currency Converter</h1>
+        <div class="underline"></div>
+        <form>
+            <div class="input">
+                <label for="amount">Enter Amount:</label><br>
+                <input type="number" id="inputAmount" value="100">
+            </div>
+
+            <div class="selection">
+                <div class="from">
+                <h3 class="black">From:</h3>
+                <img id="fromImg" src="https://flagsapi.com/IN/shiny/64.png">
+                <select name="from" id="from" onchange="flagChange(value,this);">
+                    <option value="INR">INR</option>
+                    <option value="NPR">NPR</option>
+                    <option value="USD">USD</option>
+                    <option value="AUD">AUD</option>
+                </select>
+                </div>
+                <i class="fa-solid fa-arrow-right"></i>
+                <div class="to">
+                <h3 class="black">To:</h3>
+                <img id="toImg" src="https://flagsapi.com/IN/shiny/64.png">
+                <select name="to" id="to" onchange="flagChange(value,this);">
+                    <option value="INR">INR</option>
+                    <option value="NPR">NPR</option>
+                    <option value="USD">USD</option>
+                    <option value="AUD">AUD</option>
+                </select>
+                </div>
+            </div>
+
+            <div id="output">
+                <label for="output">Output Value:</label>
+                <p id="outputAmount">100</p>
+            </div>
+        <input type="submit" id="submit" value="Get Exchange Rate">
+        </form>
+    </div>
+
+</body>
+<script src="code.js"></script>
+<script src="script.js"></script>
+</html>

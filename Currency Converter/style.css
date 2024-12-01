@@ -1,0 +1,109 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    padding : 0;
+    margin : 0;
+    box-sizing: border-box;
+    font-family: "Poppins";
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #DEAA79;
+}
+.container{
+    margin: 20px 0;
+    color:black;
+}
+
+#mainHeading{
+    background-color: #B1C29E;
+    border-radius:7px 7px 0 0;
+    text-align:center ;
+    padding: 4px;
+    letter-spacing: 2px;
+    word-spacing: 12px;
+}
+.underline{
+    border: 2px solid;
+    height: 2px;
+    width: 100%;
+    margin: auto;
+    color: #F4F6FF;
+}
+form{
+    background: linear-gradient(to top,#FFE6A9,#B1C29E);
+    border-radius:0 0 10px 10px;
+    padding: 20px 10px;
+    width: 500px;
+    min-height: 350px;
+    height: fit-content;
+}
+.fa-arrow-right{
+   font-size:60px;
+   margin-top: 24px;
+   color: #89A8B2;
+}
+img{
+    height: 50px;
+    width: 50px;
+    position: relative;
+    /* bottom: 9px; */
+}
+.from,.to{
+    padding: 9px;
+    border-radius: 7%;
+    background-color: #c7a789;
+    margin: 0 20px;
+}
+
+.black{
+    color:black;
+}
+.selection{
+    display: flex;
+    justify-content: space-between;
+    margin:30px 0;
+}
+.selection select{
+    height: fit-content;
+    border-radius:8px;
+    padding: 4px;
+    position: relative;
+    bottom: 21px;
+}
+.selection select:hover{
+    cursor: pointer;
+}
+
+#outputAmount,#inputAmount{
+    background-color: white;
+    height: 30px;
+    width: 150px;
+    border-radius: 7px;
+    margin: 10px 0;
+    padding: 6px;
+}
+#inputAmount{
+    outline: none;
+    border: 1px;
+}
+#submit{
+    border-radius: 4px;
+    padding: 4px;
+    height: 30px;
+    border: none;
+    background-color: #c7a789;
+    font-size: 15px;
+    width: 93%;
+    display: block;
+    margin: auto;
+    
+}
+#submit:hover{
+    cursor: pointer;
+    background-color: #B1C29E;
+    padding:5px ;
+}
